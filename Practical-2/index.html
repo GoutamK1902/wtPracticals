@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UL - inside - OL</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: #333;
+    }
+
+    header {
+      background-color: #333;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      display: flex;
+      align-items: center;
+      height: 100px;
+    }
+
+    header .main-img {
+      width: 100px;
+      position: absolute;
+      right: 0;
+    }
+
+    header marquee {
+      width: calc(100% - 100px);
+      justify-self: left;
+    }
+
+    .title {
+      display: inline-block;
+      align-items: center;
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+
+
+
+    .container {
+      margin-top: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      background: linear-gradient(180deg, #2e2e2e, #1a1a1a);
+      box-shadow: 5px 5px 25px inset #1f1d1d;
+      font-size: 26px;
+    }
+
+    .card {
+      margin: 50px 0;
+      width: 350px;
+      border: 1px solid #0091ff;
+      border-radius: 12px;
+      box-shadow: 5px 5px 25px #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .specs {
+      font-size: 18px;
+    }
+
+    .car-img {
+      width: 300px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img class="main-img" src="./images/honda-logo.png" alt="BMW-Logo">
+    <marquee behavior="scroll" direction="right">
+      <h1 class="title">My Favourite Hondas</h1>
+    </marquee>
+  </header>
+  <div class="container">
+    <h1>Nested List</h1>
+    <ol>
+      <div class="card">
+        <img class="car-img" src="./images/civicTypeR.jpg" alt="civicTypeR">
+        <li>Honda Civic Type R 2024<ul>Specs
+            <li class="specs">Engine: 2.0L Turbocharged Inline-4</li>
+            <li class="specs">Horsepower: 315 hp</li>
+            <li class="specs">Torque: 400 Nm</li>
+            <li class="specs">0-60 mph: 4.7s</li>
+          </ul>
+        </li>
+      </div>
+      <div class="card">
+        <img class="car-img" src="./images/accord.jpg" alt="Accord">
+        <li>Honda Accord 2024<ul>Specs
+            <li class="specs">Engine: 1.5L Turbocharged Inline-4</li>
+            <li class="specs">Horsepower: 192 hp</li>
+            <li class="specs">Torque: 260 Nm</li>
+            <li class="specs">0-60 mph: 7.6s</li>
+          </ul>
+        </li>
+      </div>
+      <div class="card">
+        <img class="car-img" src="./images/hondaNSXTypeS.jpg" alt="NSX Type S">
+        <li>Honda NSX Type S 2022<ul>Specs
+            <li class="specs">Engine: 3.5L Twin-Turbo V6</li>
+            <li class="specs">Horsepower: 600 hp</li>
+            <li class="specs">Torque: 667 Nm</li>
+            <li class="specs">0-60 mph: 2.9s</li>
+          </ul>
+        </li>
+      </div>
+      <div class="card">
+        <img class="car-img" src="./images/civic2017.jpg" alt="Civic 2017">
+        <li>Honda Civic 2017<ul>Specs
+            <li class="specs">Engine: 1.5L Turbocharged Inline-4</li>
+            <li class="specs">Horsepower: 174 hp</li>
+            <li class="specs">Torque: 220 Nm</li>
+            <li class="specs">0-60 mph: 6.7s</li>
+          </ul>
+        </li>
+      </div>
+      <div class="card">
+        <img class="car-img" src="./images/prologue.jpg" alt="Prologue">
+        <li>Honda Prologue Elite 2024<ul>Specs
+            <li class="specs">Battery: 85 kWh</li>
+            <li class="specs">Range: 300 miles</li>
+            <li class="specs">Power: 288 hp</li>
+            <li class="specs">0-60 mph: 5.7s</li>
+          </ul>
+        </li>
+      </div>
+
+
+    </ol>
+  </div>
+</body>
+
+</html>
